@@ -56,12 +56,12 @@ class Command(BaseCommand):
                 file_fields[i] = file_fields[i].replace('_id', '')
                 if not file_fields[i] in model_fields:
                     raise CommandError(
-                        f"{Model.__name__} model"
+                        f"{model.__name__} model"
                         f" does not have {file_fields[i]} field"
                     )
 
             for row in reader:
-                obj = Model()
+                obj = model()
                 for i, field_value in enumerate(row):
                     model_field = obj._meta.get_field(file_fields[i])
                     if isinstance(model_field, ForeignKey):
