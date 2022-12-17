@@ -39,11 +39,11 @@ class Command(BaseCommand):
             model_name = string.capwords(to_singular, '_').replace('_', '')
 
         try:
-            Model = apps.get_model('reviews', model_name)
+            model = apps.get_model('reviews', model_name)
         except LookupError:
             raise CommandError(f"{model_name} model does not exist")
 
-        model_fields = [field.name for field in Model._meta.fields]
+        model_fields = [field.name for field in model._meta.fields]
         file_fields = []
 
         with open(path, 'rt') as file:

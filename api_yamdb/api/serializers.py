@@ -20,7 +20,7 @@ class SignupSerializer(serializers.Serializer):
             raise serializers.ValidationError(
                 f'Username {username} занят, выберите другой имя пользователя.'
             )
-        elif User.objects.filter(email=email).exists():
+        if User.objects.filter(email=email).exists():
             raise serializers.ValidationError(
                 f'{email} уже зарегистрирован, введите другой email.'
             )
