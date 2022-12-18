@@ -43,7 +43,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: trolraf/workflow:v.18.12.22 
+          tags: trolraf/yamdb 
           
   deploy:
     runs-on: ubuntu-latest
@@ -57,7 +57,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            sudo docker pull trolraf/workflow
+            sudo docker pull trolraf/yamdb
             sudo docker-compose stop
             sudo docker-compose rm web
             touch .env 
