@@ -53,7 +53,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            sudo docker pull trolraf/workflow
+            sudo docker pull trolraf/yamdb
             sudo docker-compose stop
             sudo docker-compose rm web
             touch .env 
