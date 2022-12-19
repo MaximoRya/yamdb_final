@@ -11,7 +11,7 @@ https://github.com/MaximoRya/yamdb_final/actions/workflows/yamdb_workflow.yaml/b
 ## Технологии
 * Python 3.7
 * Django 2.2.16
-* Django Rest Framework 3.12.4
+* Django Rest Framework  3.12.4
 * Simple JWT 5.2.1
 <br><br>
 
