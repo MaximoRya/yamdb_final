@@ -39,7 +39,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: trolraf/yamdb:latest
+          tags: trolraf/yamdb
           
   deploy:
     runs-on: ubuntu-latest
