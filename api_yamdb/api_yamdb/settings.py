@@ -13,7 +13,7 @@ SECRET_KEY = SECRET_KEY = (
 
 DEBUG = False
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='testserver')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -66,7 +66,7 @@ DATABASES = {
         'NAME': os.getenv('DB_NAME', default='DB_mio'),
         'USER': os.getenv('POSTGRES_USER', default='USER_12345'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD', default='12345'),
-        'HOST': os.getenv('DB_HOST', default='HOST_mio'),
+        'HOST': os.getenv('DB_HOST', default='51.250.70.89'),
         'PORT': os.getenv('DB_PORT', default='5432')
     }
 }
