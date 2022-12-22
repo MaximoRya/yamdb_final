@@ -11,7 +11,7 @@ SECRET_KEY = SECRET_KEY = (
     os.getenv('SECRET_KEY'),
     'secret_code_12345')
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = '[*]'
 
