@@ -2,7 +2,6 @@ on:
   push:
     branches:
       - master
-
 jobs:
   tests:
     runs-on: ubuntu-latest
@@ -42,7 +41,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: trolraf/yamdb
+          tags: trolraf/yamdb:latest
           
   deploy:
     runs-on: ubuntu-latest
