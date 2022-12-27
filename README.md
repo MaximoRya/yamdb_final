@@ -52,7 +52,7 @@ python manage.py migrate
 ```
 python3 manage.py runserver
 ```
-<br><br>
+<br> <br>
 
 ## Ресурсы API YaMDb
 - Ресурс auth: аутентификация.
