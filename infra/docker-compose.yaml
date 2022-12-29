@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   db:
-    image: postgres:13.0-alpine
+    image: trolraf/postgres:13.0-alpine
 
     volumes:
       - /var/lib/postgresql/data/
@@ -29,7 +29,7 @@ services:
 
 
   nginx:
-    image: nginx:1.21.3-alpine
+    image: trolraf/nginx:1.21.3-alpine
 
     ports:
       - "80:80"
