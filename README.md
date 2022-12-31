@@ -13,7 +13,7 @@ https://github.com/MaximoRya/yamdb_final/actions/workflows/yamdb_workflow.yaml/b
 * Django 2.2.16
 * Django Rest Framework  3.12.4
 * Simple JWT 5.2.1
-<br> <br>
+<br><br>
 
 ## Как запустить проект (OS Windows)
 ### Клонировать репозиторий и перейти в него в командной строке:
