@@ -11,10 +11,12 @@ services:
       - ./.env
 
   web:
-    image: trolraf/yamdb:latest
-    build: 
-      # context: ../api_yamdb/
+    image: 
+      context: trolraf/yamdb:latest
       dockerfile: ../api_yamdb/Dockerfile
+    # build: 
+      # context: ../api_yamdb/
+      # dockerfile: ../api_yamdb/Dockerfile
     restart: always
     
     volumes:
