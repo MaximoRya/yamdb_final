@@ -15,7 +15,7 @@ services:
           # context: ../api_yamdb/
       # dockerfile: ../api_yamdb/Dockerfile
     build: 
-      # context: ../api_yamdb/
+      context: ../api_yamdb/
       dockerfile: ../api_yamdb/Dockerfile
     restart: always
     
