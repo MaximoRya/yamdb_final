@@ -21,7 +21,7 @@ requests==2.26.0
 sqlparse==0.4.1
 toml==0.10.2
 urllib3==1.26.6
-psycopg2
+psycopg2-binary==2.8.6
 gunicorn
 python-dotenv==0.21.0
 pytest-django
