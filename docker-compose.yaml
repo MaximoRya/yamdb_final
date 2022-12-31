@@ -12,7 +12,7 @@ services:
 
   web:
     image: trolraf/yamdb:latest
-    build: ../api_yamdb/
+    # build: ../api_yamdb/
     restart: always
     
     volumes:
