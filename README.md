@@ -1,5 +1,5 @@
 # API_YaMDb
-https://github.com/MaximoRya/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg <br>
+!\[my badge\](https://github.com/MaximoRya/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg <br>)
 Проект развернут на сервере:
 http://51.250.70.89/api/v1/categories/
 ## Описание
