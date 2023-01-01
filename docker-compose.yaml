@@ -14,7 +14,7 @@ services:
     image: trolraf/yamdb:latest
           # context: ../api_yamdb/
       # dockerfile: ../api_yamdb/Dockerfile
-    # build: 
+    # build: yamdb
     #   context: ../api_yamdb/
     #   dockerfile: ../api_yamdb/Dockerfile
     restart: always
